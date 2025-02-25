@@ -6,7 +6,7 @@
     <title>Результат</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/product.css" />
-    <link rel="stylesheet" href="../css/about-us.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
@@ -139,45 +139,58 @@
         </a>
       </div>
     </header>
-    <main>
-      <div class="about__us text-dark-300">
-        <img src="../img/delivery.png" />
-        <h3 class="text-3xl font-semibold">Заботимся вместе с вами</h3>
-        <ul>
-          <li>
-            Мир кровли – это специализированный электронный магазин по доставке
-            продуктов питания и товаров первой необходимости в Исправительные
-            учреждения (ИУ) и Следственные изоляторы (СИЗО).
-          </li>
-          <li>
-            Доверьте заботу о ваших близких нам, ведь теперь не обязательно
-            тратить собственное время и силы, чтобы доставить передачу вашим
-            близким. Наш уникальный сервис поможет вам решить проблему передачи
-            продуктов раз и навсегда, где бы вы не находились.
-          </li>
-          <li>
-            Основной шаг, который необходимо сделать вам и вашему близкому
-            человеку находящемуся в СИЗО или ИУ – зарегистрироваться в нашей
-            системе через установленные терминалы. После чего вы можете
-            разместить собственный заказ для доставки вашему близкому, либо
-            пополнив его баланс, предоставить возможность ему самому выбирать и
-            формировать собственный заказ в нашем электронном магазине.
-          </li>
-          <li>
-            «Мир кровли» – избавит вас от лишних затрат и неудобств связанных с
-            самостоятельной передачей посылок
-          </li>
-          <li>
-            В электронном магазине представлены только разрешенные и необходимые
-            для передачи товары. Также вы всегда сможете отслеживать статус
-            вашего заказа через свой личный кабинет. Все наши сервисы работают
-            по принципу «просто и удобно», вам лишь остается разместить заказ, а
-            все остальное мы сделаем за вас!
-          </li>
-          <li>
-            Доверьте эту работу «Мир кровли», ведь мы заботимся вместе с вами!
-          </li>
-        </ul>
+    <main class="container">
+      <div class="wrap__cart">
+        <div class="cart__info">
+          <div class="cart__title">
+            <h3 class="text-4xl font-semibold">Корзина</h3>
+            <span class="text-gray-600 text-base" id="remove__all">
+              Очистить корзину
+            </span>
+          </div>
+          <div id="cart"></div>
+        </div>
+        <div class="cart__main">
+          <div class="cart__card">
+            <button class="btn__primary text-white text-lg">
+              Оформить заказ
+            </button>
+            <button class="btn__link text-yellow-500 text-lg">
+              Использовать промокод
+            </button>
+            <ul class="text-dark-700 text-base">
+              <li>
+                <span>Количество единиц:</span>
+                <span>12</span>
+              </li>
+              <li>
+                <span>Итоговый вес:</span>
+                <span>2 239 г.</span>
+              </li>
+              <li>
+                <span>Тип заказа:</span>
+                <span>бандероль</span>
+              </li>
+              <li>
+                <span>Сумма заказа:</span>
+                <span>34 000 тг.</span>
+              </li>
+              <li>
+                <span>Промокод:</span>
+                <span class="text-red-500">-3 000 тг.</span>
+              </li>
+              <li>
+                <span>Cтоимость доставки</span>
+                <span>1 500 тг.</span>
+              </li>
+            </ul>
+            <div class="total__card font-medium text-base">
+              <span>Итого:</span>
+              <span class="text-2xl font-semibold">32 500 тг.</span>
+            </div>
+          </div>
+          <p class="text-lg text-dark-700">Минимальная сумма заказа: 4 000 тг.</p>
+        </div>
       </div>
     </main>
     <footer class="container">
@@ -222,7 +235,7 @@
       </div>
     </footer>
 
-    <script src="../js/about-us.js" type="module"></script>
+    <script src="../js/cart.js" type="module"></script>
     <script src="../js/main.js" type="module"></script>
   </body>
 </html>

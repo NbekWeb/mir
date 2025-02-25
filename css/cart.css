@@ -1,0 +1,129 @@
+@import url("./_color.css");
+
+.wrap__cart {
+  display: flex;
+  gap: 45px;
+}
+
+.cart__info {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  flex-grow: 1;
+}
+
+.cart__info .cart__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--gray-100);
+}
+.cart-item img {
+  width: 78px;
+}
+.cart-item .info {
+  flex: 1;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart-item .info p {
+  width: 280px;
+}
+.cart-item .quantity {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 130px;
+  justify-content: space-between;
+  border: 1.5px solid var(--yellow-500);
+  border-radius: 10px;
+  margin-right: 50px;
+}
+.cart-item .quantity span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.cart-item button {
+  font-size: 24px;
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.cart-item .remove {
+  padding: 0;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 40px;
+  align-items: start;
+  display: flex;
+}
+
+#remove__all:hover {
+  cursor: pointer;
+}
+
+.cart__main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 380px;
+  align-items: center;
+}
+
+.cart__main .cart__card {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--gray-100);
+  border-radius: 12px;
+}
+
+.btn__primary {
+  width: 100%;
+}
+
+.btn__link {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-color: var(--yellow-500);
+  border-width: 1.5px;
+}
+
+.btn__link:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.cart__card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart__card ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__card .total__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+

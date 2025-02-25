@@ -3,25 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/product.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <title>Результат</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
     <header class="container">
       <div class="main__header">
         <div class="main__header__left">
-          <a href="./index.html">
-            <img src="./img/logo.png" class="logo" />
+          <a href="../index.html">
+            <img src="../img/logo.png" class="logo" />
           </a>
           <div class="wrap__contact">
             <span class="text-sm text-gray-500 font-light"
@@ -42,18 +38,18 @@
           <div class="search__result" id="searchResult">
             <ul class="text-dark-300 font-light">
               <li>
-                <a href="./page/result.html">Консервы</a>
+                <a href="./result.html">Консервы</a>
               </li>
               <li>
-                <a href="./page/result.html"
+                <a href="./result.html"
                   >Лезвие для ножа Olfa 18 мм прямое (10 шт.) титановое покрытие
                 </a>
               </li>
               <li>
-                <a href="./page/result.html"> Консервы фруктовые</a>
+                <a href="./result.html"> Консервы фруктовые</a>
               </li>
               <li>
-                <a href="./page/result.html"> Консервы овощные</a>
+                <a href="./result.html"> Консервы овощные</a>
               </li>
             </ul>
           </div>
@@ -116,20 +112,20 @@
                     <i class="ri-arrow-right-s-line"></i>
                   </li>
                   <li>
-                    <a href="./page/result.html">Комплект</a>
+                    <a href="./result.html">Комплект</a>
                   </li>
                 </ul>
               </div>
               <div class="more__modal__result">
                 <ul class="text-base text-dark-300">
                   <li>
-                    <a href="./page/result.html">Карты Тарлан</a>
+                    <a href="./result.html">Карты Тарлан</a>
                   </li>
                   <li>
-                    <a href="./page/result.html">Газеты, Журналы</a>
+                    <a href="./result.html">Газеты, Журналы</a>
                   </li>
                   <li>
-                    <a href="./page/result.html">Средства защиты от комаров</a>
+                    <a href="./result.html">Средства защиты от комаров</a>
                   </li>
                 </ul>
               </div>
@@ -144,91 +140,98 @@
       </div>
     </header>
     <main>
-      <div class="banner__wrap">
-        <div class="main__banner container2">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./img/banner.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/banner.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/banner.png" />
+      <div class="container contact__wrap text-dark-300 font-semibold">
+        <div class="contact__info">
+          <h2 class="text-3xl">Контакты</h2>
+          <p class="text-lg">
+            По вопросам работы электронного магазина воспользуйтесь "формой
+            обратной связи", либо звоните по телефонам:
+          </p>
+          <div class="phone__wraps text-lg font-medium">
+            <div class="phone__wrap">
+              <span class="text-yellow-500 icon text-xl"
+                ><i class="ri-phone-fill"></i
+              ></span>
+              <a href="tel:+89999999999" class="text-yellow-500"
+                >8 999 999 9999
+              </a>
+              <span class="text-sm font-semibold">Пн-Пт: 9:00 - 18:00 / </span>
+              <span class="text-sm text-red-500 font-semibold"
+                >Сб-Вс выходной</span
+              >
+            </div>
+            <div class="phone__wrap phone__more">
+              <span class="text-yellow-500 icon text-xl"
+                ><i class="ri-phone-fill"></i
+              ></span>
+              <div>
+                <div>
+                  <a href="tel:+89999999999" class="text-yellow-500"
+                    >8 999 999 9999
+                  </a>
+                  <span class="text-sm font-semibold"
+                    >Пн-Пт: 9:00 - 18:00 /
+                  </span>
+                  <span class="text-sm text-red-500 font-semibold"
+                    >Сб-Вс выходной</span
+                  >
+                </div>
+                <span class="text-sm text-gray-500">
+                  Бесплатный звонок со всех операторов
+                </span>
               </div>
             </div>
+          </div>
+          <img src="../img/send.png" />
+        </div>
+        <div class="contact__form">
+          <h2 class="text-3xl">Форма обратной связи</h2>
+          <form id="contactForm" class="text-lg">
+            <label for="name">Фамилия и имя*</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Введите вашу фамилию и имя"
+              required
+            />
 
-            <div class="swiper__wrap">
-              <div class="swiper-button-next text-2xl text-dark-300">
-                <i class="ri-arrow-right-s-line"></i>
-              </div>
-              <div class="swiper-button-prev text-2xl text-dark-300">
-                <i class="ri-arrow-left-s-line"></i>
-              </div>
+            <label for="phone">Телефон*</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Введите ваш номер телефона"
+              required
+            />
+
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Введите вашу почту"
+              required
+            />
+
+            <label for="message">Ваше сообщение*</label>
+            <textarea
+              id="message"
+              placeholder="Напишите нам"
+              required
+            ></textarea>
+
+            <label class="file-label">
+              <input type="file" id="fileInput" hidden />
+              <span class="text-dark-300 font-light">
+                <i class="ri-attachment-2 text-2xl"></i> Прикрепить файл
+              </span>
+            </label>
+            <span id="fileName"></span>
+            <div class="btn__wrap">
+              <button type="submit" class="btn__primary text-white text-lg">
+                Отправить
+              </button>
+              <span class="link__btn text-yellow-500 text-lg btn">Отмена</span>
             </div>
-          </div>
-        </div>
-        <div class="container relative">
-          <div class="mini__banner">
-            <div class="linear__yellow plitka">
-              <img src="./img/plitka.png" />
-              <span class="text-white text-2xl font-semibold">Плитка</span>
-            </div>
-            <div class="linear__dark shrup">
-              <img src="./img/shrup.png" />
-              <span class="text-white text-2xl font-semibold">Инструменты</span>
-            </div>
-            <div class="linear__yellow bolt">
-              <img src="./img/bolt.png" />
-              <span class="text-white text-2xl font-semibold">Плитка</span>
-            </div>
-            <div class="linear__dark banka">
-              <img src="./img/banka.png" />
-              <span class="text-white text-2xl font-semibold">Плитка</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card__wrap">
-        <div class="products__wrap">
-          <div class="container head__product">
-            <div class="head__product">
-              <span class="font-semibold text-4xl">Акции</span>
-              <a class="text-lg text-yellow-500">Cмотреть все</a>
-            </div>
-          </div>
-          <div class="relative2">
-            <div id="body__card" class="body__card container"></div>
-            <span class="to__next text-2xl"
-              ><i class="ri-arrow-right-s-line"></i
-            ></span>
-          </div>
-        </div>
-        <div class="products__wrap">
-          <div class="container head__product">
-            <div class="head__product">
-              <span class="font-semibold text-4xl">Новинки</span>
-              <a class="text-lg text-yellow-500">Cмотреть все</a>
-            </div>
-          </div>
-          <div class="relative2">
-            <div id="body__card2" class="body__card container"></div>
-            <span class="to__next text-2xl"
-              ><i class="ri-arrow-right-s-line"></i
-            ></span>
-          </div>
-        </div>
-        <div class="products__wrap">
-          <div class="container head__product">
-            <div class="head__product">
-              <span class="font-semibold text-4xl">Популярные товары</span>
-              <a class="text-lg text-yellow-500">Cмотреть все</a>
-            </div>
-          </div>
-          <div class="relative2">
-            <div id="body__card3" class="body__card container"></div>
-          </div>
+          </form>
         </div>
       </div>
     </main>
@@ -236,14 +239,14 @@
       <div class="footer__main">
         <ul class="text-22 text-dark-300">
           <li>
-            <a href="./page/about-us.html"> О компании </a>
+            <a href="./about-us.html"> О компании </a>
           </li>
           <li>
-            <a href="./page/faq.html"> Вопрос-Ответ </a>
+            <a href="./faq.html"> Вопрос-Ответ </a>
           </li>
           <li>Новости</li>
           <li>
-            <a href="./page/contact.html"> Контакты </a>
+            <a href="./contact.html"> Контакты </a>
           </li>
           <li>Пополнение баланса</li>
         </ul>
@@ -273,8 +276,8 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/index.js" type="module"></script>
-    <script src="./js/main.js" type="module"></script>
+
+    <script src="../js/contact.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
   </body>
 </html>

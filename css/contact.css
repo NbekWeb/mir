@@ -1,0 +1,65 @@
+@import url("./_color.css");
+
+.contact__wrap {
+  margin-top: 70px;
+  display: flex;
+  gap: 120px;
+}
+
+.contact__info {
+  width: 580px;
+}
+.contact__wrap h2 {
+  margin-bottom: 20px;
+}
+.contact__info img {
+  width: 380px;
+}
+.phone__wraps {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.phone__wraps .icon {
+  margin-right: 10px;
+}
+
+.phone__wraps .phone__wrap {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.phone__more {
+  align-items: start !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input {
+  height: 50px;
+}
+form input,
+form textarea {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-500);
+
+  padding: 15px;
+}
+
+.btn__wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Результат</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/result.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div class="main__header">
+        <div class="main__header__left">
+          <a href="../index.html">
+            <img src="../img/logo.png" class="logo" />
+          </a>
+          <div class="wrap__contact">
+            <span class="text-sm text-gray-500 font-light"
+              >Бесплатный звонок</span
+            >
+            <a
+              href="tel:+89999999999"
+              class="text-dark-300 font-semibold text-lg"
+              >8 999 999 9999</a
+            >
+          </div>
+        </div>
+        <div class="wrapper__search">
+          <div class="main__header__search text-base">
+            <i class="ri-search-line"></i>
+            <input type="text" id="searchInput" placeholder="Поиск товаров" />
+          </div>
+          <div class="search__result" id="searchResult">
+            <ul class="text-dark-300 font-light">
+              <li>
+                <a href="./result.html">Консервы</a>
+              </li>
+              <li>
+                <a href="./result.html"
+                  >Лезвие для ножа Olfa 18 мм прямое (10 шт.) титановое покрытие
+                </a>
+              </li>
+              <li>
+                <a href="./result.html"> Консервы фруктовые</a>
+              </li>
+              <li>
+                <a href="./result.html"> Консервы овощные</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main__header__right">
+          <div class="rigth__location">
+            <span class="text-yellow-500 text-base"
+              ><i class="ri-map-pin-2-fill"></i>
+              <span>Россия</span>
+            </span>
+            <span class="text-xs text-gray-500">Москва</span>
+          </div>
+          <button class="btn btn__link text-black text-base">Войти</button>
+        </div>
+      </div>
+      <div class="wrap__drop">
+        <ul class="text-dark-300 font-semibold text-sm">
+          <li>
+            <span>Продукты</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Еда быстрого приготовления</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Консервы</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Напитки</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Бытовая химия</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Уход за собой</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <div class="relative2">
+            <li class="text-yellow-500" id="more__modal">
+              <span>Еще</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </li>
+            <div class="more__modal__wrap" id="more__modal__wrap">
+              <div class="more__modal__main">
+                <ul class="text-base text-dark-300">
+                  <li>
+                    <span>Разное</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <span>Канцтовары</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <span>Одежда</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <a href="./result.html">Комплект</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="more__modal__result">
+                <ul class="text-base text-dark-300">
+                  <li>
+                    <a href="./result.html">Карты Тарлан</a>
+                  </li>
+                  <li>
+                    <a href="./result.html">Газеты, Журналы</a>
+                  </li>
+                  <li>
+                    <a href="./result.html">Средства защиты от комаров</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <div class="basket__button text-base text-white">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="font-medium">Корзина</span>
+          <div>5</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="menu__link text-gray-500 text-sm">
+          <a href="../index.html">Главная </a> / <a href="#">Еда</a> /
+          <a href="#">Консервы</a>
+        </div>
+        <h2 class="text-4xl font-semibold text-black">Консервы</h2>
+        <h3 class="text-2xl font-semibold">Фильтр</h3>
+        <div class="result__body text-dark-300">
+          <div class="result__filtr">
+            <div class="filtr__item">
+              <span class="text-lg font-semibold slider__wrap__title"
+                >Стоимость в рублях</span
+              >
+              <div class="slider-container">
+                <div class="values">
+                  <span class="value-box" id="minValue">300₽</span>
+                  <span class="value-box" id="maxValue">700₽</span>
+                </div>
+                <div class="range-slider">
+                  <input
+                    type="range"
+                    class="range-input"
+                    id="minRange"
+                    min="0"
+                    max="1000"
+                    value="300"
+                  />
+                  <input
+                    type="range"
+                    class="range-input"
+                    id="maxRange"
+                    min="0"
+                    max="1000"
+                    value="700"
+                  />
+                  <div class="slider-track"></div>
+                </div>
+              </div>
+              <div class="space__wrap">
+                <div class="val__space">
+                  <span class="text-xs text-black">от</span>
+                  <input type="text" placeholder="0 ₽" />
+                </div>
+                <div class="val__space">
+                  <span class="text-xs text-black">до</span>
+                  <input type="text" placeholder="0 ₽" />
+                </div>
+              </div>
+            </div>
+            <div class="filtr__item">
+              <span class="text-lg text-dark-300 font-semibold">
+                Срок доставки
+              </span>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="date" value="any" checked />
+                  <span class="custom-radio"></span>
+                  Любой
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="date" value="tomorrow" />
+                  <span class="custom-radio"></span>
+                  Завтра
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="date" value="day_after_tomorrow" />
+                  <span class="custom-radio"></span>
+                  Послезавтра
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="date" value="3_days" />
+                  <span class="custom-radio"></span>
+                  До 3 дней
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="date" value="5_days" />
+                  <span class="custom-radio"></span>
+                  До 5 дней
+                </label>
+              </div>
+            </div>
+            <div class="filtr__item">
+              <span class="text-lg text-dark-300 font-semibold">
+                Теги и категории
+              </span>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="filter" value="sales" checked />
+                  <span class="custom-checkbox"></span>
+                  Акции
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="filter" value="available" />
+                  <span class="custom-checkbox"></span>
+                  В наличии
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="filter" value="popular" />
+                  <span class="custom-checkbox"></span>
+                  Популярные товары
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="filter" value="new" />
+                  <span class="custom-checkbox"></span>
+                  Новинки
+                </label>
+              </div>
+            </div>
+            <div class="filtr__item">
+              <span class="text-lg text-dark-300 font-semibold">
+                Теги и категории
+              </span>
+              <div class="space__wrap">
+                <div class="val__space">
+                  <span class="text-xs text-black">от</span>
+                  <input type="text" placeholder="0 ₽" />
+                </div>
+                <div class="val__space">
+                  <span class="text-xs text-black">до</span>
+                  <input type="text" placeholder="0 ₽" />
+                </div>
+              </div>
+            </div>
+            <div class="filtr__item">
+              <span class="text-lg text-dark-300 font-semibold">
+                Стоимость в рублях
+              </span>
+              <div class="space__wrap">
+                <div class="val__space">
+                  <span class="text-xs text-black">от</span>
+                  <input type="text" placeholder="0 ₽" />
+                </div>
+                <div class="val__space">
+                  <span class="text-xs text-black">до</span>
+                  <input type="text" placeholder="0 ₽" />
+                </div>
+              </div>
+            </div>
+            <div class="btn__result">
+              <button class="btn btn__primary text-lg font-semibold">
+                Применить
+              </button>
+              <button
+                class="btn btn__linked text-lg font-semibold text-yellow-500"
+              >
+                Сбросить
+              </button>
+            </div>
+          </div>
+          <div class="result__main">
+            <div class="result__character">
+              <span class="text-lg result__count">16 товаров</span>
+              <div class="custom__select">
+                <div>
+                  <span class="text-lg"> По увеличению цены </span>
+
+                  <i class="ri-arrow-up-s-line rotate-180 text-xl"></i>
+                </div>
+                <ul class="text-lg">
+                  <li>от А до Я</li>
+                  <li>от Я до А</li>
+                  <li>По увеличению цены</li>
+                  <li>По уменьшению цены</li>
+                </ul>
+              </div>
+            </div>
+            <div class="result__products" id="result__products"></div>
+            <div class="empty__main">
+              <img src="../img/empty.png" />
+              <span class="text-black text-2xl font-semibold"
+                >Нам жаль, но по вашему запросу ничего не нашлось</span
+              >
+              <p class="text-base">
+                <span class="text-gray-600">
+                  Скорректируйте ваш запрос или
+                </span>
+                <br />
+                <span class="text-yellow-500"> перейдите в каталог </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="interest__product">
+          <div class="interest__title">
+            <h4 class="text-4xl font-semibold text-dark-300">
+              Вам может быть интересно
+            </h4>
+            <span class="text-lg text-yellow-500">Cмотреть все</span>
+          </div>
+          <div class="interest__products" id="interest__products"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="footer__main">
+        <ul class="text-22 text-dark-300">
+          <li>
+            <a href="./about-us.html"> О компании </a>
+          </li>
+          <li>
+            <a href="./faq.html"> Вопрос-Ответ </a>
+          </li>
+          <li>Новости</li>
+          <li>Контакты</li>
+          <li>Пополнение баланса</li>
+        </ul>
+        <div>
+          <span class="text-gray-500 text-sm">Бесплатно по России</span>
+          <a href="tel:+89999999999" class="text-dark-300 font-semibold text-lg"
+            >8 999 999 99 99</a
+          >
+          <a href="tel:+80000000000" class="text-dark-300 font-semibold text-lg"
+            >8 000 000 00 00</a
+          >
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="text-sm text-dark-100 font-light">
+          <li>2025 © Мир кровли</li>
+          <li>Политика конфиденциальности</li>
+          <li>Публичная оферта</li>
+          <li>Условия возврата</li>
+        </ul>
+        <div class="text-white text-15">
+          <a><i class="ri-facebook-fill"></i></a>
+          <a><i class="ri-instagram-line"></i></a>
+          <a>
+            <i class="ri-twitter-fill"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/result.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+  </body>
+</html>

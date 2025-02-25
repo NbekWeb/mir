@@ -1,0 +1,154 @@
+@import url("./_color.css");
+
+.single__card {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.single__card__product {
+  position: relative;
+}
+
+.single__card__product img {
+  width: 100%;
+}
+
+.like__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.single__price {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.single__price .text-2xl {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.single__ves {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrap__size {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrap__size .single__size {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.sizes__group {
+  display: flex;
+  gap: 15px;
+}
+
+.sizes__group span,
+.sizes__group div {
+  width: 40px;
+  max-width: 40px;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--gray-500);
+  border-radius: 8px;
+}
+
+.sizes__group span:hover,
+.sizes__group div:hover {
+  cursor: pointer;
+}
+
+.sizes__group .active {
+  border-color: var(--green-500);
+}
+
+.sizes__group .disable {
+  border-color: var(--gray-800);
+  background: var(--gray-800);
+}
+
+.sizes__group .disable:hover {
+  cursor: not-allowed;
+}
+
+.sizes__group__ves div {
+  padding: 5px;
+}
+
+.sizes__group__ves div p {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.black__size {
+  background: var(--dark-300);
+}
+
+.white__size {
+  background: var(--white);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.red__size {
+  background: var(--red-600);
+}
+
+.sizes__btn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 30px;
+}
+.count__size {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1.5px solid var(--yellow-500);
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+}
+
+
+
+.info__text {
+  margin-top: 30px;
+  line-height: 22px;
+}
+
+.buying__products__wrap {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.buying__products__wrap .buying__product__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buying__product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}

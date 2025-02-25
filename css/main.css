@@ -1,0 +1,369 @@
+@import url("./_color.css");
+@import url("./_text.css");
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../font/MuseoSansCyrl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+button {
+  outline: none;
+  background: none;
+}
+
+input {
+  border: none;
+  background: inherit;
+  outline: none;
+  color: var(--dark-300);
+}
+textarea{
+  outline: none;
+  color: var(--dark-300);
+}
+
+input::placeholder {
+  color: var(--gray-500);
+  font-weight: 300;
+}
+
+textarea::placeholder {
+  color: var(--gray-500);
+  font-weight: 300;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.main__header {
+  display: flex;
+  gap: 83px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.main__header__left {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.logo {
+  height: 38px;
+  width: auto;
+}
+
+.main__header__left .wrap__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wrapper__search {
+  flex-grow: 1;
+  position: relative;
+}
+
+.main__header__search {
+  flex-grow: 1;
+  background: var(--gray-200);
+  padding: 15px 20px;
+  border-radius: 30px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.search__result {
+  display: none;
+  position: absolute;
+  top: 100%;
+  margin-top: 5px;
+  background: var(--white);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  z-index: 100;
+  border-radius: 10px;
+  padding: 20px 16px;
+}
+
+.search__result ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.search__result ul li {
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+.search__result ul li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.main__header__search i {
+  color: var(--gray-900);
+}
+
+.main__header__search input {
+  flex-grow: 1;
+}
+
+.main__header__right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.main__header__right .rigth__location {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: end;
+}
+
+.btn {
+  transition: 0.3s ease;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn__link {
+  border: 1px solid var(--gray-600);
+  height: 34px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.btn__link:hover {
+  border-color: var(--yellow-500);
+  color: var(--yellow-500);
+}
+
+.wrap__drop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.wrap__drop ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.wrap__drop ul li {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.wrap__drop ul li:hover {
+  cursor: pointer;
+}
+
+.wrap__drop ul li i {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.basket__button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 48px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background: var(--yellow-500);
+}
+
+.basket__button i {
+  font-size: 24px;
+}
+
+.basket__button div {
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #ffffff99;
+}
+
+/* footer */
+
+.footer__main {
+  margin-top: 100px;
+  padding: 40px 0 30px 0;
+  border-top: 1px solid var(--gray-500);
+  border-bottom: 1px solid var(--gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__main ul {
+  display: flex;
+  gap: 45px;
+}
+
+.footer__main div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer__bottom {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.footer__bottom ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer__bottom div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__bottom div a {
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-300);
+}
+
+.more__modal__wrap {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: -50%;
+  transform: translateX(-50%);
+  gap: 0px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 0px #30303026;
+}
+
+.more__modal__wrap .more__modal__main {
+  background: var(--white);
+  padding: 20px 15px;
+  border-radius: 15px 0 0 15px;
+}
+
+.more__modal__wrap .more__modal__main ul {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+}
+
+.more__modal__wrap .more__modal__main ul li {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: start !important;
+  width: 100%;
+  gap: 40px !important;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.more__modal__wrap .more__modal__main ul li:hover {
+  cursor: pointer;
+  color: var(--yellow-500);
+}
+
+.more__modal__wrap .more__modal__result {
+  background: var(--gray-100);
+  padding: 20px 15px;
+  border-radius: 0 15px 15px 0;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.more__modal__result ul {
+  max-width: 135px;
+  width: 135px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.more__modal__result ul li {
+  transition: 0.3s ease;
+}
+
+.more__modal__result ul li:hover {
+  color: var(--yellow-500);
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn__primary {
+  height: 50px;
+  padding: 0 32px;
+  background: var(--yellow-500);
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.btn__primary:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--gray-500);
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}

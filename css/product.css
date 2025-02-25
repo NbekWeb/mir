@@ -1,0 +1,125 @@
+.card__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  gap: 100px;
+}
+
+.products__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.products__wrap .head__product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.products__wrap .body__card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+
+.relative2 {
+  position: relative;
+}
+
+.to__next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px 0px rgba(115, 121, 140, 0.15);
+}
+
+.product__card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product__card img {
+  width: 100%;
+  height: auto;
+}
+
+.product__card .like__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.like__icon:hover {
+  cursor: pointer;
+}
+
+.product__card .product__character {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.product__card .product__price {
+  margin-top: 28px;
+  display: flex;
+  align-items: end;
+  gap: 23px;
+}
+
+.product__card .product__price .price__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__item .text-gray-700 {
+  text-decoration: line-through;
+}
+
+.price__btn {
+  flex-grow: 1;
+  border: 1.5px solid var(--yellow-500);
+  border-radius: 10px;
+  height: 40px;
+}
+
+.not__click {
+  background: var(--yellow-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not__click:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.price__btn .basket__count {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.price__btn .basket__count i {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.price__btn .basket__count i:hover {
+  cursor: pointer;
+  opacity: 1;
+}

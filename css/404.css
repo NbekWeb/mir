@@ -1,0 +1,24 @@
+.wrap__404 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.wrap__404 img {
+  width: 500px;
+}
+
+.notfound__info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn__primary {
+  width: 280px;
+  padding: 0 40px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}

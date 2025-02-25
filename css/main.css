@@ -15,6 +15,10 @@
   font-family: "Museo Sans Cyrl", sans-serif;
 }
 
+body {
+  min-height: 100vh;
+}
+
 button {
   outline: none;
   background: none;
@@ -26,7 +30,7 @@ input {
   outline: none;
   color: var(--dark-300);
 }
-textarea{
+textarea {
   outline: none;
   color: var(--dark-300);
 }
@@ -40,7 +44,6 @@ textarea::placeholder {
   color: var(--gray-500);
   font-weight: 300;
 }
-
 
 a {
   text-decoration: none;

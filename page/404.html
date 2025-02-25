@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Результат</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/404.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+    />
+  </head>
+  <body>
+    <header class="container">
+      <div class="main__header">
+        <div class="main__header__left">
+          <a href="../index.html">
+            <img src="../img/logo.png" class="logo" />
+          </a>
+          <div class="wrap__contact">
+            <span class="text-sm text-gray-500 font-light"
+              >Бесплатный звонок</span
+            >
+            <a
+              href="tel:+89999999999"
+              class="text-dark-300 font-semibold text-lg"
+              >8 999 999 9999</a
+            >
+          </div>
+        </div>
+        <div class="wrapper__search">
+          <div class="main__header__search text-base">
+            <i class="ri-search-line"></i>
+            <input type="text" id="searchInput" placeholder="Поиск товаров" />
+          </div>
+          <div class="search__result" id="searchResult">
+            <ul class="text-dark-300 font-light">
+              <li>
+                <a href="./result.html">Консервы</a>
+              </li>
+              <li>
+                <a href="./result.html"
+                  >Лезвие для ножа Olfa 18 мм прямое (10 шт.) титановое покрытие
+                </a>
+              </li>
+              <li>
+                <a href="./result.html"> Консервы фруктовые</a>
+              </li>
+              <li>
+                <a href="./result.html"> Консервы овощные</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main__header__right">
+          <div class="rigth__location">
+            <span class="text-yellow-500 text-base"
+              ><i class="ri-map-pin-2-fill"></i>
+              <span>Россия</span>
+            </span>
+            <span class="text-xs text-gray-500">Москва</span>
+          </div>
+          <button class="btn btn__link text-black text-base">Войти</button>
+        </div>
+      </div>
+      <div class="wrap__drop">
+        <ul class="text-dark-300 font-semibold text-sm">
+          <li>
+            <span>Продукты</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Еда быстрого приготовления</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Консервы</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Напитки</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Бытовая химия</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Уход за собой</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <div class="relative2">
+            <li class="text-yellow-500" id="more__modal">
+              <span>Еще</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </li>
+            <div class="more__modal__wrap" id="more__modal__wrap">
+              <div class="more__modal__main">
+                <ul class="text-base text-dark-300">
+                  <li>
+                    <span>Разное</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <span>Канцтовары</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <span>Одежда</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <a href="./result.html">Комплект</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="more__modal__result">
+                <ul class="text-base text-dark-300">
+                  <li>
+                    <a href="./result.html">Карты Тарлан</a>
+                  </li>
+                  <li>
+                    <a href="./result.html">Газеты, Журналы</a>
+                  </li>
+                  <li>
+                    <a href="./result.html">Средства защиты от комаров</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <div class="basket__button text-base text-white">
+          <i class="ri-shopping-cart-2-line"></i>
+          <span class="font-medium">Корзина</span>
+          <div>5</div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="wrap__404">
+        <div class="notfound__info">
+          <span class="text-4xl font-semibold">Упс, что-то пошло не так</span>
+          <span class="text-xl"
+            >Мы не можем найти страницу, которую вы ищете</span
+          >
+          
+          <a href="../index.html" class="btn__primary text-lg text-white font-semibold">
+            Вернуться на главную
+          </a>
+        </div>
+        <img src="../img/404.png" />
+      </div>
+    </main>
+
+    <script src="../js/main.js" type="module"></script>
+  </body>
+</html>

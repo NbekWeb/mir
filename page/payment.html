@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Результат</title>
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/product.css" />
-    <link rel="stylesheet" href="../css/order.css" />
+    <link rel="stylesheet" href="../css/payment.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
@@ -140,53 +139,68 @@
       </div>
     </header>
     <main class="container">
-      <div class="wrap__form">
-        <h2 class="text-4xl font-medium">Оформление заказа</h2>
-        <form>
-          <div class="form__item">
-            <label>Адрес</label>
-            <input type="text" placeholder="Алматы" />
-            <input type="text" placeholder="ЕЦ-166/4" />
-          </div>
-          <div class="form__item">
-            <label>Данные получателя</label>
-            <input type="text" placeholder="Логин" />
-          </div>
-          <label class="checkbox-label">
-            <input type="checkbox" name="filter" value="sales" checked />
-            <span class="custom-checkbox"></span>
-            Не знаю логин
-          </label>
-          <div class="form__item">
-            <label> Дата доставки</label>
-            <input type="text" placeholder="дд.мм.гггг." />
-          </div>
-          <div class="wrap__warn text-black">
-            <span class="font-semibold">Внимание!</span>
-            <span class="text-dark-700 text-sm"
-              >Дата доставки может быть изменена администратором</span
+      <div class="wrap__payment">
+        <h3 class="text-4xl font-medium">Выберите способ оплаты</h3>
+        <div class="payment__cards">
+          <div class="payment__card">
+            <div>
+              <img src="../img/master.svg" />
+              <img src="../img/visa.svg" />
+            </div>
+            <span class="text-xs text-dark-300"
+              >Банковские карты Visa, MasterCard, American Express</span
             >
           </div>
-          <div class="wrap__total">
-            <span class="font-medium text-base">Итого:</span>
-            <span class="text-2xl font-semibold">32 500 тг.</span>
+          <div class="payment__card">
+            <img src="../img/tkassa.svg" />
+
+            <span class="text-xs text-dark-300">Терминалы Касса24</span>
           </div>
-          <label class="checkbox-label">
-            <input type="checkbox" name="filter" value="sales" checked />
-            <span class="custom-checkbox"></span>
-            <span class="text-xs">
-              Я подтверждаю, что ознакомлен и согласен с условиями
-              <span class="text-yellow-500"> публичной оферты </span>
-              электронного магазина Convex
+          <div class="payment__card">
+            <img src="../img/atf.svg" />
+
+            <span class="text-xs text-dark-300">Интернет Банкинг AlfaBank</span>
+          </div>
+          <div class="payment__card">
+            <img src="../img/alfa.svg" />
+
+            <span class="text-xs text-dark-300"> Интернет Банкинг AlfaBank</span>
+          </div>
+          <div class="payment__card">
+            <img src="../img/rbk.svg" />
+
+            <span class="text-xs text-dark-300"
+              >Интернет Банкинг RBK банк
             </span>
-          </label>
-          <a
-            href="./payment.html"
-            class="text-white btn__primary text-lg font-medium"
-          >
-            Выбрать вариант оплаты
-          </a>
-        </form>
+          </div>
+          <div class="payment__card">
+            <img src="../img/euro.svg" />
+
+            <span class="text-xs text-dark-300"
+              >Интернет Банкинг Евразийский
+            </span>
+          </div>
+          <div class="payment__card">
+            <img src="../img/sber.svg" />
+
+            <span class="text-xs text-dark-300">
+              Интернет Банкинг Сбербанк Казахстан</span
+            >
+          </div>
+          <div class="payment__card">
+            <img src="../img/qiwi.svg" />
+
+            <span class="text-xs text-dark-300"> Кошелек Qiwi</span>
+          </div>
+          <div class="payment__card">
+            <img src="../img/ae.svg" />
+
+            <span class="text-xs text-dark-300"
+              >Банковские карты Visa, MasterCard, American Express</span
+            >
+          </div>
+        </div>
+        <button class="btn__primary text-white text-lg">Продолжить</button>
       </div>
     </main>
     <footer class="container">
@@ -231,7 +245,6 @@
       </div>
     </footer>
 
-    <script src="../js/order.js" type="module"></script>
     <script src="../js/main.js" type="module"></script>
   </body>
 </html>

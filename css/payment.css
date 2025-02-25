@@ -1,0 +1,43 @@
+.wrap__payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.payment__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.payment__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 24px;
+  width: 240px;
+  height: 180px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--gray-500);
+}
+
+.payment__card div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.payment__card img {
+  width: 50px;
+}
+
+.btn__primary {
+  width: 380px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

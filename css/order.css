@@ -88,3 +88,10 @@ input:checked + .custom-checkbox::after {
   border-radius: 10px;
   border: 1px solid var(--gray-100);
 }
+
+.btn__primary{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}

@@ -364,7 +364,7 @@ ul {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: var(--gray-500);
+  background-color: transparent;
   border-radius: 2px;
 }
 
@@ -382,7 +382,7 @@ ul {
 }
 
 .wrap__drop ul::-webkit-scrollbar-track {
-  background-color: var(--gray-600);
+  background-color: transparent;
 }
 
 .max_search__md,
@@ -528,7 +528,7 @@ ul {
   .main__header__search {
     padding: 10px 15px;
   }
-  .maxsm__search{
+  .maxsm__search {
     margin-bottom: 20px;
   }
   .search__result {
@@ -583,7 +583,7 @@ ul {
   .footer__bottom ul {
     align-items: start;
   }
-  .footer__bottom{
+  .footer__bottom {
     padding: 15px 0;
   }
 }

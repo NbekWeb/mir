@@ -122,3 +122,38 @@
   cursor: pointer;
   opacity: 1;
 }
+
+@media (max-width: 640px) {
+  .product__card .text-lg {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .product__card .text-2xl {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .price__item .text-lg {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product__card .product__price{
+    margin-top: 10px;
+    gap: 120px;
+  }
+  .product__card .product__character {
+    gap: 0;
+  }
+  .price__btn{
+    height: 32px;
+    border-radius: 6px;
+  }
+  .price__btn .text-xl{
+    font-size: 16px;
+    line-height: 18px;
+
+  }
+  .price__btn .text-2xl{
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

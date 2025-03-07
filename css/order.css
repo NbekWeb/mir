@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
+  margin-top: 20px;
 }
 
 .wrap__form form {
@@ -89,9 +90,36 @@ input:checked + .custom-checkbox::after {
   border: 1px solid var(--gray-100);
 }
 
-.btn__primary{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
+.btn__primary {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .wrap__form {
+    gap: 25px;
+  }
+  .text-4xl {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .text-4xl {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .wrap__warn {
+    padding: 20px;
+  }
+  .wrap__form input {
+    height: 40px;
+    padding: 10px;
+  }
+  .wrap__total{
+    padding: 15px;
+  }
 }

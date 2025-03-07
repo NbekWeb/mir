@@ -385,6 +385,10 @@ ul {
   background-color: transparent;
 }
 
+.relative2 {
+  position: relative;
+}
+
 .max_search__md,
 .mobile__menu,
 .logo__moblie,

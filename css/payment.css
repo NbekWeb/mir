@@ -41,3 +41,41 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 1024px) {
+  .payment__card {
+    width: 200px;
+  }
+  .text-4xl {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .payment__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .payment__card {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .payment__cards {
+    gap: 15px;
+  }
+  .payment__card {
+    padding: 15px;
+    height: 150px;
+  }
+  .text-4xl {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}

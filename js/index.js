@@ -3,7 +3,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 40,
     loop: true,
     autoplay: {
-        delay: 2000,
+        delay: 2500,
         disableOnInteraction: false
     },
     pagination: {

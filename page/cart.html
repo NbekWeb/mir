@@ -14,58 +14,106 @@
   </head>
   <body>
     <header class="container">
-      <div class="main__header">
-        <div class="main__header__left">
-          <a href="../index.html">
-            <img src="../img/logo.png" class="logo" />
-          </a>
-          <div class="wrap__contact">
-            <span class="text-sm text-gray-500 font-light"
-              >Бесплатный звонок</span
-            >
-            <a
-              href="tel:+89999999999"
-              class="text-dark-300 font-semibold text-lg"
-              >8 999 999 9999</a
-            >
+      <div>
+        <div class="main__header">
+          <div class="main__header__left">
+            <a href="../index.html">
+              <img src="../img/logo.png" class="logo logo__pc" />
+              <img src="../img/mobileLogo.png" class="logo logo__moblie" />
+            </a>
+            <div class="wrap__contact">
+              <span class="text-sm text-gray-500 font-light"
+                >Бесплатный звонок</span
+              >
+              <a
+                href="tel:+89999999999"
+                class="text-dark-300 font-semibold text-lg"
+                >8 999 999 9999</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="wrapper__search">
-          <div class="main__header__search text-base">
-            <i class="ri-search-line"></i>
-            <input type="text" id="searchInput" placeholder="Поиск товаров" />
+          <div class="wrapper__search search__md">
+            <div class="main__header__search text-base">
+              <i class="ri-search-line"></i>
+              <input
+                type="text"
+                class="searchInput"
+                placeholder="Поиск товаров"
+              />
+            </div>
+            <div class="search__result searchResult">
+              <ul class="text-dark-300 font-light">
+                <li>
+                  <a href="./result.html">Консервы</a>
+                </li>
+                <li>
+                  <a href="./result.html"
+                    >Лезвие для ножа Olfa 18 мм прямое (10 шт.) титановое
+                    покрытие
+                  </a>
+                </li>
+                <li>
+                  <a href="./result.html"> Консервы фруктовые</a>
+                </li>
+                <li>
+                  <a href="./result.html"> Консервы овощные</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="search__result" id="searchResult">
-            <ul class="text-dark-300 font-light">
-              <li>
-                <a href="./result.html">Консервы</a>
-              </li>
-              <li>
-                <a href="./result.html"
-                  >Лезвие для ножа Olfa 18 мм прямое (10 шт.) титановое покрытие
-                </a>
-              </li>
-              <li>
-                <a href="./result.html"> Консервы фруктовые</a>
-              </li>
-              <li>
-                <a href="./result.html"> Консервы овощные</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="main__header__right">
-          <div class="rigth__location">
-            <span class="text-yellow-500 text-base"
-              ><i class="ri-map-pin-2-fill"></i>
-              <span>Россия</span>
+          <div class="main__header__right">
+            <div class="rigth__location loc__sm">
+              <span class="text-yellow-500 text-base"
+                ><i class="ri-map-pin-2-fill"></i>
+                <span>Россия</span>
+              </span>
+              <span class="text-xs text-gray-500">Москва</span>
+            </div>
+            <button class="btn btn__link text-black text-base">Войти</button>
+            <span class="text-gray-500 text-xl mobile__menu" id="menuOpen">
+              <i class="ri-menu-line"></i>
             </span>
-            <span class="text-xs text-gray-500">Москва</span>
           </div>
-          <button class="btn btn__link text-black text-base">Войти</button>
+        </div>
+        <div class="maxsm__search">
+          <div class="wrapper__search max_search__md">
+            <div class="main__header__search text-base">
+              <i class="ri-search-line"></i>
+              <input
+                type="text"
+                class="searchInput"
+                placeholder="Поиск товаров"
+              />
+            </div>
+            <div class="search__result searchResult">
+              <ul class="text-dark-300 font-light">
+                <li>
+                  <a href="./result.html">Консервы</a>
+                </li>
+                <li>
+                  <a href="./result.html"
+                    >Лезвие для ножа Olfa 18 мм прямое (10 шт.) титановое
+                    покрытие
+                  </a>
+                </li>
+                <li>
+                  <a href="./result.html"> Консервы фруктовые</a>
+                </li>
+                <li>
+                  <a href="./result.html"> Консервы овощные</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="./cart.html" class="relative2 max__sm__basket">
+            <i
+              class="ri-shopping-cart-2-line text-xl text-gray-500 font-medium"
+            ></i>
+            <div class="text-white">5</div>
+          </a>
         </div>
       </div>
-      <div class="wrap__drop">
+      <div class="wrap__drop drop__maxsm">
         <ul class="text-dark-300 font-semibold text-sm">
           <li>
             <span>Продукты</span>
@@ -138,6 +186,77 @@
           <div>5</div>
         </a>
       </div>
+      <div class="menu__maxsm" id="mobileMenu">
+        <ul class="text-dark-300 font-semibold text-sm mobile__category">
+          <li>
+            <span>Продукты</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Еда быстрого приготовления</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Консервы</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Напитки</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Бытовая химия</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <li>
+            <span>Уход за собой</span>
+            <i class="ri-arrow-down-s-line"></i>
+          </li>
+          <div class="relative2">
+            <li class="text-yellow-500" id="more__modal">
+              <span>Еще</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </li>
+            <div class="more__modal__wrap" id="more__modal__wrap">
+              <div class="more__modal__main">
+                <ul class="text-base text-dark-300">
+                  <li>
+                    <span>Разное</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <span>Канцтовары</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <span>Одежда</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                  </li>
+                  <li>
+                    <a href="./result.html">Комплект</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="more__modal__result">
+                <ul class="text-base text-dark-300">
+                  <li>
+                    <a href="./result.html">Карты Тарлан</a>
+                  </li>
+                  <li>
+                    <a href="./result.html">Газеты, Журналы</a>
+                  </li>
+                  <li>
+                    <a href="./result.html">Средства защиты от комаров</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <span class="close__icon text-xl text-gray-500" id="menuClose"
+          ><i class="ri-close-line"></i
+        ></span>
+      </div>
     </header>
     <main class="container">
       <div class="wrap__cart">
@@ -152,12 +271,14 @@
         </div>
         <div class="cart__main">
           <div class="cart__card">
-            <button class="btn__primary text-white text-lg" id="go__order">
-              Оформить заказ
-            </button>
-            <button class="btn__link text-yellow-500 text-lg">
-              Использовать промокод
-            </button>
+            <div class="wrap__btns">
+              <button class="btn__primary text-white text-lg" id="go__order">
+                Оформить заказ
+              </button>
+              <button class="btn__link text-yellow-500 text-lg">
+                Использовать промокод
+              </button>
+            </div>
             <ul class="text-dark-700 text-base">
               <li>
                 <span>Количество единиц:</span>

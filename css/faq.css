@@ -1,5 +1,9 @@
 @import url("./_color.css");
 
+main{
+  overflow-x: hidden;
+}
+
 .faq__wrap {
   display: flex;
   gap: 120px;
@@ -131,6 +135,111 @@ form textarea {
   gap: 20px;
 }
 
-.icon:hover{
-    cursor: pointer;
+.icon:hover {
+  cursor: pointer;
+}
+
+.max__lg {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .faq__wrap {
+    gap: 50px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .faq__wrap {
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .faq__question {
+    gap: 20px;
+    width: auto;
+  }
+  .faq__question ul {
+    gap: 20px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .faq__wrap .btn__primary {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+  .faq__wrap .btn__primary.text-lg {
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .max__lg {
+    display: flex;
+  }
+  .faq__question.lg {
+    display: none;
+  }
+  .faq__wrap {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .faq__main ul {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .faq__main ul .rotate-180 {
+    font-size: 20px;
+  }
+  .faq__main ul li {
+    padding-bottom: 10px;
+  }
+  .mt-5 {
+    margin-top: 20px;
+  }
+  .modal__main,
+  .modal__head {
+    padding: 25px;
+  }
+  .modal__main .text-lg{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  form input {
+    height: 40px;
+    padding: 10px;
+  }
+  .modal__content{
+    width: calc(100% - 20px);
+  }
+  .modal__main .btn__primary{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq__main ul {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .faq__main ul .rotate-180 {
+    font-size: 18px;
+  }
+  .modal__main,
+  .modal__head {
+    padding: 15px;
+  }
+  .modal__main .text-2xl{
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

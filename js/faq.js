@@ -1,42 +1,45 @@
 document.querySelectorAll(".faq__question ul li").forEach((item) => {
-    item.addEventListener("click", function () {
-        document.querySelectorAll(".faq__question ul li").forEach((li) => {
-            li.classList.remove("active");
-        });
-        this.classList.add("active");
+  item.addEventListener("click", function () {
+    document.querySelectorAll(".faq__question ul li").forEach((li) => {
+      li.classList.remove("active");
     });
+    this.classList.add("active");
+  });
 });
 
-document.getElementById("open__modal").addEventListener("click", function () {
+document.querySelectorAll(".open__modal__btn").forEach((btn) => {
+  btn.addEventListener("click", function () {
     document.body.classList.add("open__modal");
-
+  });
 });
 
 function closeModal() {
-    document.body.classList.remove("open__modal");
+  document.body.classList.remove("open__modal");
 }
 
 document.getElementById("close__btn").addEventListener("click", function () {
-    closeModal()
+  closeModal();
 });
 
 document.addEventListener("click", function (event) {
-    const modal = document.getElementById("modal__content");
-    const openModalButton = document.getElementById("open__modal");
+  const modal = document.getElementById("modal__content");
+  const openModalButton = document.getElementById("open__modal");
 
-    if (event.target !== openModalButton) {
-        closeModal()
-    }
+  if (
+    !event.target.closest(".open__modal__btn") &&
+    !modal.contains(event.target)
+  ) {
+    closeModal();
+  }
 });
 
-
 document.querySelectorAll(".faq__main li").forEach((item) => {
-    item.addEventListener("click", () => {
-        const icon = item.querySelector(".rotate-180");
-        icon.classList.toggle("rotate");
-    });
+  item.addEventListener("click", () => {
+    const icon = item.querySelector(".rotate-180");
+    icon.classList.toggle("rotate");
+  });
 });
 
 document.getElementById("modal__content").addEventListener("click", (event) => {
-    event.stopPropagation();
+  event.stopPropagation();
 });

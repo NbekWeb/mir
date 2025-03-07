@@ -63,3 +63,80 @@ form textarea {
 .icon:hover {
   cursor: pointer;
 }
+.wrap__attach {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .contact__wrap {
+    margin-top: 40px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .contact__wrap .text-3xl {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact__wrap {
+    gap: 20px;
+  }
+  .contact__info {
+    width: auto;
+  }
+  .contact__wrap .contact__form {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__wrap {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .contact__wrap .contact__form {
+    max-width: 100%;
+  }
+  .contact__wrap .text-3xl {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .contact__wrap h2 {
+    margin-bottom: 15px;
+  }
+  .contact__wrap .text-lg {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .phone__wraps {
+    margin: 20px 0;
+    gap: 10px;
+  }
+  .phone__wraps .icon {
+    margin-right: 0;
+  }
+  .phone__wraps .text-xl {
+    font-size: 18px;
+    line-height: 20px;
+  }
+ 
+}
+
+
+@media (max-width: 640px) {
+  .contact__info img{
+    width: 100%;
+  }
+  .phone__wrap .text-lg,.phone__wrap .text-sm{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .btn__primary{
+    height: 40px;
+    border-radius: 8px;
+  }
+}

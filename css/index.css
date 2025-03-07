@@ -1,8 +1,6 @@
 @import url("./_color.css");
 
-.hidden {
-  display: none;
-}
+
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -118,13 +116,7 @@
   width: auto;
 }
 
-.limit2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
+
 
 @media (max-width: 1280px) {
   .container2 {

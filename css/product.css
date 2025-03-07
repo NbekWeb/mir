@@ -141,7 +141,7 @@
     gap: 120px;
   }
   .product__card .product__character {
-    gap: 0;
+    gap: 3px;
   }
   .price__btn{
     height: 32px;

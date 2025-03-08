@@ -490,6 +490,13 @@ body.open__modal {
   h2{
     margin: 20px 0;
   }
+  .wrap__filtr .text-2xl{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .modal__content{
+    border-radius: 10px;
+  }
 }
 
 #close__btn {
